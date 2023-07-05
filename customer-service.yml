@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url : jdbc:h2:~/ecommerce;AUTO_SERVER=TRUE
+    username: admin
+    password: '{cipher}AQBCp04Bu97aa3jExsqfeWMb3XfOcbf6z1LE3ysQ9DdVOT00G1YPn1wc/A8Ixvmpa6jlnlm4Uguqwvwgji86CKZYe3j+BOraHcxNTdN7PKpD7Q57sjh66JQkuKmiI4laUjGL9+7Ne3ePPk8fpZo6xf8luhAhvpunXm8kIsX0wauVQaadRf22v7s6fR9S06XTHqvzWB27wYYGe1G/uAOFIvOQ5kcuRPzG3ElHMJ8EbBAQeIjaqVR2NZfK8L9lcGgyDp4IEFwEDCiTGAugzwm3CXydAfAvmF/8Idn0qY1hrWTLDw2up3YGkPM9Cl3VMBhOM27zcdwDgjRKEHgO3VjIV1d7PwfhfLnHa/p1lxmj7b9DpMyXWI7B6g4/mfpLCPfZqug='
+
+token:
+  expiration_time: 86400000
+  secret: "236979CB6F1AD6B6A6184A8CC36871E26235DD67DCFE404149231E6BE37DB3818CC36871E26changeapplicataion2"
+
+gateway:
+  ip: 172.18.0.7
+  
+order_service:
+  url: http://127.0.0.1:8000/order-service/%s/orders
+  exception:
+    orders_is_empty: User's order is empty.
