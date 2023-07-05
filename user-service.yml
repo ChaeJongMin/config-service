@@ -10,7 +10,7 @@ token:
   secret: "236979CB6F1AD6B6A6184A8CC36871E26235DD67DCFE404149231E6BE37DB3818CC36871E26changeapplicataion2"
 
 gateway:
-  ip: 172.18.0.5 
+  ip: 172.18.0.7
   
 order_service:
   url: http://127.0.0.1:8000/order-service/%s/orders
